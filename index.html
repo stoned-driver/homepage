@@ -2,9 +2,159 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Résumé ( ͡▀̿ ̿ ͜ʖ ͡▀̿ ̿ )</title>
+    <title>Résumé</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+
 </head>
 <body>
-― Hello World! &#x1F609;
+<main>
+    <div class="resume">
+        <div class="container">
+            <div class="resume__block">
+                <h1 class="contact-info__header">Stoned driver</h1>
+                <h3 class="contact-info__sub-header">JavaScript Engineer</h3>
+
+                <div class="contact_info_container fh">
+                    <div class="contact-info__block">
+                        <a href="" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                            d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>Kyiv, Ukraine</span>
+                        </a>
+                        <a href="https://ua.linkedin.com/company/binary-studio_241166" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>Binary studio</span>
+                        </a>
+                        <a href="https://ua.linkedin.com/company/binary-studio_241166" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>Binary studio</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-info__block contact-info__block--center">
+                        <img class="contact-info__avatar" src="assets/avatar.webp" alt="Avatar">
+                    </div>
+
+                    <div class="contact-info__block">
+                        <a href="" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 0H64C37.5 0 16 21.5 16 48v416C16 490.5 37.5 512 64 512h256c26.5 0 48-21.5 48-48v-416C368 21.5 346.5 0 320 0zM240 447.1C240 456.8 232.8 464 224 464H159.1C151.2 464 144 456.8 144 448S151.2 432 160 432h64C232.8 432 240 439.2 240 447.1z"/></svg>
+                            </div>
+                            <span>+380 95 445 72 04</span>
+                        </a>
+                        <a href="mailto:kosianchuk.d@gmail.com?&body=Offer" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                            </div>
+                            <span>kosianchuk.d</span>
+                        </a>
+                        <a href="#" rel="author" class="contact-info__item">
+                            <div class="contact-info__item-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"/></svg>
+                            </div>
+                            <span>kosianchuk_ds</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="resume__block">
+                <div class="intro">
+                    <div class="intro__icon-wrapper">
+                        <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="intro_text">
+                        We had 2 bags of grass, 75 pellets of mescaline, 5 sheets of high-powered blotter acid, a saltshaker half-full of cocaine, a whole galaxy of multi-colored uppers, downers, screamers, laughers... Also, a quart of tequila, a quart of rum, a case of beer, a pint of raw ether, and two dozen amyls. Not that we needed all that for the trip, but once you get locked into a serious drug collection, the tendency is to push it as far as you can.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="resume__block">
+                <div class="skills">
+                    <h3 class="skills__header">Skills</h3>
+                    <p class="skills__text">Sleep, play on ps in UFC, find cheap tickets for the flight, build castles in the air and sometimes smoke 💨</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="resume__block">
+                <div class="main-info fh">
+
+                    <div class="experiences">
+                        <h3 class="experiences__header">Experience</h3>
+                        <div class="experiences__company">
+                            <div class="experiences__company-header">
+                                <span class="experiences__company-header-durability">For whole my life</span>
+                                <h3 class="experiences__company-header-name">Freelance</h3>
+                            </div>
+
+                            <div class="experiences__company-project">
+                                <span class="experiences__company-project-role">
+                                    The gambling industry / NDA
+                                </span>
+                                <h3 class="experiences__company-project-name">NDA</h3>
+                                <ul class="experiences__company-project-responsibilities">
+                                    <li>I created good things</li>
+                                    <li>Worked with git and Jira</li>
+                                    <li>Collaborated with backend developers to implement features</li>
+                                    <li>Worked with Redux for managing React application's state</li>
+                                    <li>NDA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="additional-info fv">
+                        <div class="additional-info__education">
+                            <h3 class="additional-info__education-header">Education</h3>
+                            <div class="additional-info__education-university">
+                                <span class="additional-info__education-university-durability">2007 - 2012</span>
+                                <h3 class="additional-info__education-university-speciality">Economic Law</h3>
+                                <p class="additional-info__education-university-name">Taras Shevchenko National University</p>
+                            </div>
+                        </div>
+
+                        <div class="additional-info__languages">
+                            <h3 class="additional-info__languages-header">Languages</h3>
+                            <p class="additional-info__languages-item">
+                                Ukrainian (understand as native)
+                            </p>
+                            <p class="additional-info__languages-item">
+                                English (pre-Intermediate)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>
