@@ -109,6 +109,10 @@ body {
     margin-bottom: 20px;
 }
 
+ .contact-info__item:hover {
+     color: var(--primary-text-color);
+ }
+
 .contact-info__item-icon-wrapper {
     margin-right: 10px;
     width: 20px;
